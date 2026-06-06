@@ -1,0 +1,88 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "5.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    },
+    "Volo.Abp.Account": {
+      "version": "10.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "10.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    },
+    "Volo.Abp.Identity": {
+      "version": "10.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "10.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "10.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "10.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "10.4.0",
+      "isInstalled": true,
+      "creationTime": "05/24/2026 10:19:35 +00:00"
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "MassLabIdentity.Application": {
+      "path": "src/MassLabIdentity.Application/MassLabIdentity.Application.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.Domain.Shared": {
+      "path": "src/MassLabIdentity.Domain.Shared/MassLabIdentity.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.Application.Contracts": {
+      "path": "src/MassLabIdentity.Application.Contracts/MassLabIdentity.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.HttpApi": {
+      "path": "src/MassLabIdentity.HttpApi/MassLabIdentity.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.HttpApi.Client": {
+      "path": "src/MassLabIdentity.HttpApi.Client/MassLabIdentity.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.Web": {
+      "path": "src/MassLabIdentity.Web/MassLabIdentity.Web.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.EntityFrameworkCore": {
+      "path": "src/MassLabIdentity.EntityFrameworkCore/MassLabIdentity.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.DbMigrator": {
+      "path": "src/MassLabIdentity.DbMigrator/MassLabIdentity.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "MassLabIdentity.Domain": {
+      "path": "src/MassLabIdentity.Domain/MassLabIdentity.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

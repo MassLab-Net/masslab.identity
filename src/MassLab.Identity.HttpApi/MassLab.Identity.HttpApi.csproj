@@ -5,11 +5,11 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <RootNamespace>Victor.Identity</RootNamespace>
+    <RootNamespace>MassLab.Identity</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Victor.Identity.Application.Contracts\Victor.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\MassLab.Identity.Application.Contracts\MassLab.Identity.Application.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

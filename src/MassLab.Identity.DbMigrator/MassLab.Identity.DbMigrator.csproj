@@ -16,8 +16,8 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Autofac" Version="10.4.0" />
-    <ProjectReference Include="..\Victor.Identity.EntityFrameworkCore\Victor.Identity.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\Victor.Identity.Application.Contracts\Victor.Identity.Application.Contracts.csproj" />
+    <ProjectReference Include="..\MassLab.Identity.EntityFrameworkCore\MassLab.Identity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\MassLab.Identity.Application.Contracts\MassLab.Identity.Application.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

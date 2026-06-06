@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+  </Configurations>
+  <Folder Name="/src/">
+    <Project Path="src\MassLab.Identity.Application.Contracts\MassLab.Identity.Application.Contracts.csproj" />
+    <Project Path="src\MassLab.Identity.Application\MassLab.Identity.Application.csproj" />
+    <Project Path="src\MassLab.Identity.DbMigrator\MassLab.Identity.DbMigrator.csproj" />
+    <Project Path="src\MassLab.Identity.Domain.Shared\MassLab.Identity.Domain.Shared.csproj" />
+    <Project Path="src\MassLab.Identity.Domain\MassLab.Identity.Domain.csproj" />
+    <Project Path="src\MassLab.Identity.EntityFrameworkCore\MassLab.Identity.EntityFrameworkCore.csproj" />
+    <Project Path="src\MassLab.Identity.HttpApi.Client\MassLab.Identity.HttpApi.Client.csproj" />
+    <Project Path="src\MassLab.Identity.HttpApi\MassLab.Identity.HttpApi.csproj" />
+    <Project Path="src\MassLab.Identity.Web\MassLab.Identity.Web.csproj" />
+  </Folder>
+</Solution>

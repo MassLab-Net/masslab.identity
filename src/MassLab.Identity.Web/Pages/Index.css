@@ -1,0 +1,105 @@
+.MassLab-identity-home {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.MassLab-hero {
+    overflow: hidden;
+}
+
+.MassLab-hero .card-body {
+    align-items: center;
+    background:
+        radial-gradient(circle at 85% 12%, rgba(22, 119, 255, 0.16), transparent 28%),
+        linear-gradient(135deg, #f8fbff 0%, #ffffff 52%, #eef6ff 100%);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    min-height: 320px;
+    padding: 2.25rem;
+}
+
+.MassLab-hero-content {
+    display: grid;
+    gap: 1rem;
+    max-width: 680px;
+}
+
+.MassLab-kicker {
+    color: #1677ff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.MassLab-hero h1 {
+    color: #111827;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.MassLab-hero p {
+    color: #5f6b7a;
+    font-size: 1.05rem;
+    max-width: 620px;
+}
+
+.MassLab-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.MassLab-hero-panel {
+    background: #ffffff;
+    border: 1px solid #dbe7f5;
+    border-radius: 1rem;
+    box-shadow: 0 18px 44px rgba(17, 24, 39, 0.08);
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.5rem;
+}
+
+.MassLab-logo,
+.MassLab-card-icon {
+    align-items: center;
+    background: linear-gradient(135deg, #1677ff, #3c9cff);
+    border-radius: 0.85rem;
+    color: #ffffff;
+    display: inline-flex;
+    font-weight: 800;
+    height: 3rem;
+    justify-content: center;
+    width: 3rem;
+}
+
+.MassLab-hero-panel strong,
+.MassLab-card h3 {
+    color: #111827;
+}
+
+.MassLab-hero-panel span,
+.MassLab-card p {
+    color: #5f6b7a;
+}
+
+.MassLab-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.MassLab-card .card-body {
+    display: grid;
+    gap: 0.75rem;
+    min-height: 190px;
+}
+
+@media (max-width: 992px) {
+    .MassLab-hero .card-body,
+    .MassLab-grid {
+        grid-template-columns: 1fr;
+    }
+}

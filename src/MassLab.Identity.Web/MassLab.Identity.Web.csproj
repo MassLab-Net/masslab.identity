@@ -6,7 +6,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <RootNamespace>Victor.Identity.Web</RootNamespace>
     <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
@@ -51,9 +50,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Victor.Identity.Application\Victor.Identity.Application.csproj" />
-    <ProjectReference Include="..\Victor.Identity.HttpApi\Victor.Identity.HttpApi.csproj" />
-    <ProjectReference Include="..\Victor.Identity.EntityFrameworkCore\Victor.Identity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\MassLab.Identity.Application\MassLab.Identity.Application.csproj" />
+    <ProjectReference Include="..\MassLab.Identity.HttpApi\MassLab.Identity.HttpApi.csproj" />
+    <ProjectReference Include="..\MassLab.Identity.EntityFrameworkCore\MassLab.Identity.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,43 @@
+:root {
+    --lpx-logo: none;
+    --lpx-logo-icon: none;
+}
+
+.lpx-brand-logo {
+    align-items: center;
+    background-image: none !important;
+    display: inline-flex;
+    gap: 0.65rem;
+    min-width: 150px;
+}
+
+.lpx-brand-logo::before {
+    align-items: center;
+    background: linear-gradient(135deg, #1677ff, #3c9cff);
+    border-radius: 0.65rem;
+    color: #ffffff;
+    content: "V";
+    display: inline-flex;
+    font-size: 1rem;
+    font-weight: 800;
+    height: 2.25rem;
+    justify-content: center;
+    width: 2.25rem;
+}
+
+.lpx-brand-logo::after {
+    color: #1d2630;
+    content: "MassLab";
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.abp-account-layout .lpx-brand-logo {
+    justify-content: flex-start;
+    min-width: 220px;
+}
+
+.abp-account-layout .lpx-brand-logo::after {
+    content: "MassLab Identity";
+}

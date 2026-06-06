@@ -1,0 +1,15 @@
+{
+  "Culture": "en",
+  "Texts": {
+    "AppName": "MassLab Identity",
+    "Menu:Home": "Home",
+    "LongWelcomeMessage": "MassLab Identity secures the admin portal and service APIs with centralized authentication, roles, and permissions.",
+    "Welcome": "Welcome to MassLab Identity",
+    "Permission:OrdersRead": "Read orders",
+    "Permission:OrdersWrite": "Manage orders",
+    "Permission:ProductsRead": "Read products",
+    "Permission:ProductsWrite": "Manage products",
+    "Permission:ProductsInventory": "Manage product inventory",
+    "Permission:ProductsSettings": "Manage product settings"
+  }
+}

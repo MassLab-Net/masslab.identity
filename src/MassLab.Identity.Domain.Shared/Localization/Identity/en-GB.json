@@ -1,0 +1,9 @@
+{
+  "Culture": "en-GB",
+  "Texts": {
+    "AppName": "MassLab Identity",
+    "Menu:Home": "Home",
+    "LongWelcomeMessage": "MassLab Identity secures the admin portal and service APIs with centralized authentication, roles, and permissions.",
+    "Welcome": "Welcome to MassLab Identity"
+  }
+}
