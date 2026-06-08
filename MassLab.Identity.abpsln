@@ -8,8 +8,8 @@
     "TargetDotnetFramework": "net10.0"
   },
   "modules": {
-    "MassLabIdentity": {
-      "path": "MassLabIdentity.abpmdl"
+    "MassLab.Identity": {
+      "path": "MassLab.Identity.abpmdl"
     }
   },
   "runProfiles": {

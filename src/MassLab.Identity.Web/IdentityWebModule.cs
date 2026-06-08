@@ -39,8 +39,11 @@ using Volo.Abp.TenantManagement.Web;
 using System;
 using System.Security.Cryptography.X509Certificates;
 using MassLab.Identity.Web.Menus;
+using MassLab.Identity.Web.Authentication;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using MassLab.Identity;
 using Volo.Abp.Account.Web;
 using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
@@ -52,6 +55,8 @@ using Volo.Abp.OpenIddict;
 using Volo.Abp.Security.Claims;
 using Volo.Abp.SettingManagement.Web;
 using Volo.Abp.Studio.Client.AspNetCore;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 namespace MassLab.Identity.Web;
 
@@ -244,6 +249,30 @@ public class IdentityWebModule : AbpModule
         {
             options.IsDynamicClaimsEnabled = true;
         });
+
+        context.Services.AddTransient<TenantExternalLoginProviderSettings>();
+        context.Services.AddSingleton<IAuthenticationSchemeProvider, TenantExternalLoginSchemeProvider>();
+        context.Services.AddSingleton<IOptionsMonitor<GoogleOptions>, TenantGoogleOptionsMonitor>();
+        context.Services.AddSingleton<IOptionsMonitor<OpenIdConnectOptions>, TenantOpenIdConnectOptionsMonitor>();
+
+        context.Services.AddAuthentication()
+            .AddGoogle(ExternalLoginProviderSchemes.Google, ExternalLoginProviderSchemes.Google, options =>
+            {
+                options.CallbackPath = "/signin-google";
+                options.ClientId = "configured-per-tenant";
+                options.ClientSecret = "configured-per-tenant";
+            })
+            .AddOpenIdConnect(ExternalLoginProviderSchemes.EntraId, ExternalLoginProviderSchemes.EntraIdDisplayName, options =>
+            {
+                options.CallbackPath = ExternalLoginProviderSchemes.EntraIdCallbackPath;
+                options.Authority = "https://login.microsoftonline.com/common/v2.0";
+                options.ClientId = "configured-per-tenant";
+                options.ClientSecret = "configured-per-tenant";
+                options.ResponseType = OpenIdConnectResponseType.Code;
+                options.SaveTokens = true;
+                options.GetClaimsFromUserInfoEndpoint = true;
+                options.Scope.Add("email");
+            });
     }
 
     private void ConfigureVirtualFileSystem(IWebHostEnvironment hostingEnvironment)

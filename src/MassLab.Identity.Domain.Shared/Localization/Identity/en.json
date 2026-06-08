@@ -10,6 +10,20 @@
     "Permission:ProductsRead": "Read products",
     "Permission:ProductsWrite": "Manage products",
     "Permission:ProductsInventory": "Manage product inventory",
-    "Permission:ProductsSettings": "Manage product settings"
+    "Permission:ProductsSettings": "Manage product settings",
+    "Permission:ExternalLoginProvidersManage": "Manage external login providers",
+    "Menu:LoginProviders": "Login providers",
+    "LoginProviders": "Login providers",
+    "LoginProviders:Description": "Configure tenant login providers.",
+    "LoginProviders:Google": "Google",
+    "LoginProviders:EntraId": "Microsoft Entra ID",
+    "LoginProviders:Enabled": "Enabled",
+    "LoginProviders:ClientId": "Client ID",
+    "LoginProviders:ClientSecret": "Client secret",
+    "LoginProviders:TenantId": "Tenant ID",
+    "LoginProviders:CallbackUrl": "Callback URL",
+    "LoginProviders:Save": "Save changes",
+    "LoginProviders:SecretPlaceholder": "Leave blank to keep the current secret",
+    "LoginProviders:Saved": "Login provider settings saved."
   }
 }

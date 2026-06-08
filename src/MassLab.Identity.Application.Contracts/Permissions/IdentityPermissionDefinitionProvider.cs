@@ -16,6 +16,7 @@ public class IdentityPermissionDefinitionProvider : PermissionDefinitionProvider
         myGroup.AddPermission(IdentityPermissions.ProductsWrite, L("Permission:ProductsWrite"));
         myGroup.AddPermission(IdentityPermissions.ProductsInventory, L("Permission:ProductsInventory"));
         myGroup.AddPermission(IdentityPermissions.ProductsSettings, L("Permission:ProductsSettings"));
+        myGroup.AddPermission(IdentityPermissions.ExternalLoginProvidersManage, L("Permission:ExternalLoginProvidersManage"));
     }
 
     private static LocalizableString L(string name)

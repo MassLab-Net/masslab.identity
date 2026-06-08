@@ -8,6 +8,7 @@ public static class MassLabServicePermissions
     public const string ProductsWrite = "products.write";
     public const string ProductsInventory = "products.inventory";
     public const string ProductsSettings = "products.settings";
+    public const string ExternalLoginProvidersManage = "identity.externalLoginProviders.manage";
 
     public static string[] All { get; } =
     {
@@ -16,6 +17,7 @@ public static class MassLabServicePermissions
         ProductsRead,
         ProductsWrite,
         ProductsInventory,
-        ProductsSettings
+        ProductsSettings,
+        ExternalLoginProvidersManage
     };
 }

@@ -47,15 +47,21 @@ public class IdentityMenuContributor : IMenuContributor
         {
             administration.SetSubItemOrder(TenantManagementMenuNames.GroupName, 1);
         }
-        else
-        {
-            administration.TryRemoveMenuItem(TenantManagementMenuNames.GroupName);
-        }
         
         administration.SetSubItemOrder(SettingManagementMenuNames.GroupName, 3);
 
         //Administration->Settings
         administration.SetSubItemOrder(SettingManagementMenuNames.GroupName, 8);
+
+        administration.AddItem(
+            new ApplicationMenuItem(
+                IdentityMenus.LoginProviders,
+                l["Menu:LoginProviders"],
+                "~/Administration/LoginProviders",
+                icon: "fa fa-key",
+                order: 7
+            ).RequirePermissions(IdentityPermissions.ExternalLoginProvidersManage)
+        );
         
         return Task.CompletedTask;
     }

@@ -20,7 +20,10 @@ public class Program
         try
         {
             Log.Information("Starting web host.");
+            Log.Information("Creating web application builder.");
             var builder = WebApplication.CreateBuilder(args);
+            Log.Information("Web application builder created.");
+            Log.Information("Configuring host.");
             builder.Host
                 .AddAppSettingsSecretsJson()
                 .UseAutofac()
@@ -31,9 +34,16 @@ public class Program
                         .ReadFrom.Services(services)
                         .WriteTo.Async(c => c.AbpStudio(services));
                 });
+            Log.Information("Host configured.");
+            Log.Information("Configuring ABP application.");
             await builder.AddApplicationAsync<IdentityWebModule>();
+            Log.Information("ABP application configured.");
+            Log.Information("Building web application.");
             var app = builder.Build();
+            Log.Information("Initializing web application.");
             await app.InitializeApplicationAsync();
+            Log.Information("Web application initialized.");
+            Log.Information("Running web application.");
             await app.RunAsync();
             return 0;
         }

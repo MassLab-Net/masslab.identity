@@ -48,40 +48,40 @@
     }
   },
   "packages": {
-    "MassLabIdentity.Application": {
-      "path": "src/MassLabIdentity.Application/MassLabIdentity.Application.abppkg",
+    "MassLab.Identity.Application": {
+      "path": "src/MassLab.Identity.Application/MassLab.Identity.Application.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.Domain.Shared": {
-      "path": "src/MassLabIdentity.Domain.Shared/MassLabIdentity.Domain.Shared.abppkg",
+    "MassLab.Identity.Domain.Shared": {
+      "path": "src/MassLab.Identity.Domain.Shared/MassLab.Identity.Domain.Shared.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.Application.Contracts": {
-      "path": "src/MassLabIdentity.Application.Contracts/MassLabIdentity.Application.Contracts.abppkg",
+    "MassLab.Identity.Application.Contracts": {
+      "path": "src/MassLab.Identity.Application.Contracts/MassLab.Identity.Application.Contracts.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.HttpApi": {
-      "path": "src/MassLabIdentity.HttpApi/MassLabIdentity.HttpApi.abppkg",
+    "MassLab.Identity.HttpApi": {
+      "path": "src/MassLab.Identity.HttpApi/MassLab.Identity.HttpApi.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.HttpApi.Client": {
-      "path": "src/MassLabIdentity.HttpApi.Client/MassLabIdentity.HttpApi.Client.abppkg",
+    "MassLab.Identity.HttpApi.Client": {
+      "path": "src/MassLab.Identity.HttpApi.Client/MassLab.Identity.HttpApi.Client.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.Web": {
-      "path": "src/MassLabIdentity.Web/MassLabIdentity.Web.abppkg",
+    "MassLab.Identity.Web": {
+      "path": "src/MassLab.Identity.Web/MassLab.Identity.Web.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.EntityFrameworkCore": {
-      "path": "src/MassLabIdentity.EntityFrameworkCore/MassLabIdentity.EntityFrameworkCore.abppkg",
+    "MassLab.Identity.EntityFrameworkCore": {
+      "path": "src/MassLab.Identity.EntityFrameworkCore/MassLab.Identity.EntityFrameworkCore.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.DbMigrator": {
-      "path": "src/MassLabIdentity.DbMigrator/MassLabIdentity.DbMigrator.abppkg",
+    "MassLab.Identity.DbMigrator": {
+      "path": "src/MassLab.Identity.DbMigrator/MassLab.Identity.DbMigrator.abppkg",
       "folder": "src"
     },
-    "MassLabIdentity.Domain": {
-      "path": "src/MassLabIdentity.Domain/MassLabIdentity.Domain.abppkg",
+    "MassLab.Identity.Domain": {
+      "path": "src/MassLab.Identity.Domain/MassLab.Identity.Domain.abppkg",
       "folder": "src"
     }
   }
